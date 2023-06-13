@@ -1,0 +1,31 @@
+div.container{
+  height: 100vh;
+  display: flex;
+}
+
+div.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(102,184,215);
+  background: linear-gradient(90deg, rgba(102,184,215,1) 30%, rgba(193,162,226,1) 65%);
+}
+
+div.logo, div.form{
+  width: 50vw;
+}
+
+div.logoname{
+  text-align: center;
+}
+
+img.logo{
+  width: 70%;
+}
+
+h1.name{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
