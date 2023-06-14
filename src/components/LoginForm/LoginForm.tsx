@@ -12,7 +12,7 @@ function LoginForm() {
       <form className='login-form'>
         <div className="form-group">
           <Form.Label>UserName</Form.Label>
-          <Form.Control type="email" placeholder="name@example.com" />
+          <Form.Control type="email" placeholder="username" />
         </div>
         <div className="form-group">
           <Form.Label>Email</Form.Label>

@@ -17,6 +17,12 @@
   padding-bottom: 10px;
 }
 
+input{
+
+  height: 70px;
+
+}
+
 button[type="submit"] {
   padding: 10px 20px;
   background-color: #4CAF50;
@@ -25,6 +31,7 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
+  margin-top: 10%;
 }
 
 button[type="submit"]:hover {
