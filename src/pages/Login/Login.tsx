@@ -4,17 +4,19 @@ import './LogIn.css'
 function LogIn() {
   return (
     <>
-    <div className="container">
-      <div className="logo">
-        <div className='logoname'>
-          <img src='/src/assets/img/lotus-white.png' className='logo'/>
-          <h1 className='name'>TaskMinder</h1>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col logo">
+            <div className='logoname'>
+              <img src='/src/assets/img/lotus-white.png' className='logo'/>
+              <h1 className='name'>TaskMinder</h1>
+            </div>
+          </div>
+          <div className="form col">
+            <LoginForm />
+          </div>
         </div>
       </div>
-      <div className="form">
-        <LoginForm />
-      </div>
-    </div>
     </>
   );
 }

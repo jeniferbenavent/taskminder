@@ -1,4 +1,5 @@
-import { Button, TextField } from '@mui/material';
+import { Button } from '@mui/material';
+import { Form } from 'react-bootstrap';
 import './LoginForm.css';
 
 function LoginForm() {
@@ -10,13 +11,20 @@ function LoginForm() {
       </div>
       <form className='login-form'>
         <div className="form-group">
-          <TextField className="form-input" id="outlined-basic" label="Username" variant="outlined" />
+          <Form.Label>UserName</Form.Label>
+          <Form.Control type="email" placeholder="name@example.com" />
         </div>
         <div className="form-group">
-          <TextField className="form-input" id="outlined-basic" label="Email" variant="outlined" />
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="name@example.com" />
         </div>
         <div className="form-group">
-          <TextField className="form-input" id="outlined-basic" label="Password" variant="outlined" />
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type="password"
+            id="inputPassword5"
+            aria-describedby="passwordHelpBlock"
+          />
         </div>
         <div className="form-group">
           <Button type="submit" variant="contained">LogIn</Button>
