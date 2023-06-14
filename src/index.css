@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'GalanoGrotesqueBold';
+  src: url("/src/assets/fonts/Galano\ Grotesque\ Alt\ DEMO\ Bold.otf");
+}
+
+h1, p{
+  margin: 0;
+}
