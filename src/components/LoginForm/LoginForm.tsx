@@ -7,13 +7,9 @@ function LoginForm() {
     <div className='rightPanel'>
       <div className='infoTitle'>
         <h1>Login</h1>
-        <p>Welcome Back! Please login to your account.</p>
+        <p>Welcome Back! Please login to your<br></br>account.</p>
       </div>
       <form className='login-form'>
-        <div className="form-group">
-          <Form.Label>UserName</Form.Label>
-          <Form.Control type="email" placeholder="username" />
-        </div>
         <div className="form-group">
           <Form.Label>Email</Form.Label>
           <Form.Control type="email" placeholder="name@example.com" />
@@ -27,9 +23,10 @@ function LoginForm() {
           />
         </div>
         <div className="form-group">
-          <Button type="submit" variant="contained">LogIn</Button>
+          <Button type="submit" variant="contained">Login</Button>
         </div>
       </form>
+      <p>New User? <a>SignUp</a></p>
     </div>
   );
 }
