@@ -20,3 +20,26 @@ h1.name{
   margin: 0;
   padding: 0;
 }
+
+a {
+  color: rgb(102, 184, 215) !important;
+  font-family: "GalanoGrotesqueBold";
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(193,162,226,1) !important;
+}
+
+.forms{
+justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.changeform{
+  position: absolute;
+  bottom: 5%;
+  
+}

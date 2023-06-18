@@ -1,7 +1,14 @@
-import LoginForm from '../../components/LoginForm/LoginForm';
+import { useState } from 'react';
+import LoginForm from '../../components/auth/LoginForm/LoginForm';
 import './LogIn.css'
 
 function LogIn() {
+  const [showSignUp, setShowSignUp] = useState(false);
+
+  const handleSignUpClick = () => {
+    setShowSignUp(true);
+  };
+
   return (
     <>
       <div className="container-fluid">
