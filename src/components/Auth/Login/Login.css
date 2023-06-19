@@ -65,3 +65,24 @@ p {
 .link:hover {
   color: rgba(193,162,226,1) !important;
 }
+
+a {
+  color: rgb(102, 184, 215) !important;
+  font-family: "GalanoGrotesqueBold";
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgba(193,162,226,1) !important;
+}
+
+.forms{
+justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.newuser{
+  text-align: center;
+}

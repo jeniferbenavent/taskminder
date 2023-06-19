@@ -1,0 +1,115 @@
+.rightPanel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 0 25%;
+}
+
+.form-input,
+.login-form {
+  padding-top: 10%;
+  width: 95%;
+}
+
+.infoTitle {
+  width: 95%;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+label {
+  color: #b8b6b6;
+}
+
+input {
+  height: 55px;
+}
+
+button[type="submit"] {
+  background: #66b8d7;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "GalanoGrotesqueBold";
+  height: 3.4375rem;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background: rgba(193, 162, 226, 1);
+}
+
+h1 {
+  font-family: "GalanoGrotesqueBold";
+  font-size: 3em;
+  padding-bottom: 5%;
+}
+
+p {
+  color: #b8b6b6;
+}
+
+.link {
+  color: #66b8d7 !important;
+  cursor: pointer;
+  font-family: "GalanoGrotesqueBold";
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgba(193, 162, 226, 1) !important;
+}
+
+div.logo {
+  align-items: center;
+  background: #66b8d7;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 184, 215, 1) 30%,
+    rgba(193, 162, 226, 1) 65%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+div.logoname {
+  text-align: center;
+}
+
+img.logo {
+  width: 70%;
+}
+
+h1.name {
+  color: #fff;
+  font-family: "GalanoGrotesqueBold";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #66b8d7 !important;
+  cursor: pointer;
+  font-family: "GalanoGrotesqueBold";
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(193, 162, 226, 1) !important;
+}
+
+.forms {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.newuser {
+  text-align: center;
+}
