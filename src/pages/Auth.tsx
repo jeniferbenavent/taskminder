@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import SidePanelLogo from '../components/SidePanelLogo/SidePanelLogo'
-import Login from '../components/Auth/Login/Login';
-import SignUp from '../components/Auth/Signup/SignUp';
+import Login from '../components/Auth/Login';
+import SignUp from '../components/Auth/SignUp';
 
 function Auth() {
-  const [ currentForm, setCurrentForm ] = useState('login');
-  const toggleForm = (formType:string) => {
+  const [currentForm, setCurrentForm] = useState('login');
+  const toggleForm = (formType: string) => {
     setCurrentForm(formType)
   }
 
@@ -16,7 +16,7 @@ function Auth() {
           <SidePanelLogo />
         </div>
         <div className="form col">
-          { currentForm == 'login' ? <Login OnFormSwitch={toggleForm}/> : <SignUp OnFormSwitch={toggleForm}/> }
+          {currentForm == 'login' ? <Login OnFormSwitch={toggleForm} /> : <SignUp OnFormSwitch={toggleForm} />}
         </div>
       </div>
     </div>

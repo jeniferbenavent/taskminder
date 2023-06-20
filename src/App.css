@@ -1,5 +1,68 @@
-html, body, #root {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+html,body,#root {
+  height:100vh;
+  margin:0;
+  padding:0
+}
+  
+.rightPanel {
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  justify-content:center;
+  padding:0 25%
+}
+
+.auth-form {
+  padding-top:10%;
+  width:100%
+}
+
+.form-title {
+  width:100%
+}
+
+.form-group {
+  padding-bottom:20px
+}
+
+input {
+  height:55px
+}
+
+button[type="submit"] {
+  background:#66b8d7;
+  border:none;
+  border-radius:6px;
+  color:#fff;
+  cursor:pointer;
+  font-family:"GalanoGrotesqueBold";
+  height:3.4375rem;
+  padding:10px 20px;
+  width:100%
+}
+
+button[type="submit"]:hover {
+  background:rgba(193,162,226,1)
+}
+
+.typeform-title {
+  font-family:"GalanoGrotesqueBold";
+  font-size:3em;
+  padding-bottom:5%
+}
+
+label,.form-subtitle {
+  color:#b8b6b6
+}
+
+.link,.a-formlink {
+  color:#66b8d7!important;
+  cursor:pointer;
+  font-family:"GalanoGrotesqueBold";
+  text-decoration:none
+}
+
+.link:hover,.a-formlink:hover {
+  color:rgba(193,162,226,1)!important
 }

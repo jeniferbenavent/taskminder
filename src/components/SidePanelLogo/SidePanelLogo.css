@@ -1,8 +1,26 @@
+div.logo {
+  align-items: center;
+  background: #66b8d7;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 184, 215, 1) 30%,
+    rgba(193, 162, 226, 1) 65%
+  );
+  display: flex;
+  justify-content: center;
+}
 
-div.logoname{
+div.logoname {
   text-align: center;
 }
 
-img.logo{
+img.logo {
   width: 70%;
+}
+
+h1.name {
+  color: #fff;
+  font-family: "GalanoGrotesqueBold";
+  margin: 0;
+  padding: 0;
 }
