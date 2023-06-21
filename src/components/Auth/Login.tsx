@@ -1,9 +1,15 @@
 import { Button } from "@mui/material";
 import { Form } from "react-bootstrap";
 import { useAuth } from "../../hooks/useAuth";
+import { Link } from "react-router-dom";
 
-function Login(props: HTMLFormElement) {
+function Login(props: any) {
   const { email, setEmail, password, setPassword, signIn } = useAuth();
+
+  const goDashboard = () => {
+    console.log("click");
+    
+  }
 
   return (
     <div className="rightPanel">
@@ -29,7 +35,9 @@ function Login(props: HTMLFormElement) {
             onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div className="form-group">
-          <Button type="submit" variant="contained">Login</Button>
+          <Link to={"dashboard"}>
+            <Button type="submit" variant="contained" onClick={goDashboard}>Login</Button>
+          </Link>
         </div>
         <p className="form-subtitle">New User?<a onClick={() => props.OnFormSwitch('register')} className="a-formlink"> SignUp</a></p>
       </form>

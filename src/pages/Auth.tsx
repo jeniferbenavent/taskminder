@@ -3,7 +3,7 @@ import SidePanelLogo from '../components/SidePanelLogo/SidePanelLogo'
 import Login from '../components/Auth/Login';
 import SignUp from '../components/Auth/SignUp';
 
-function Auth() {
+const Auth = () => {
   const [currentForm, setCurrentForm] = useState('login');
   const toggleForm = (formType: string) => {
     setCurrentForm(formType)
@@ -20,7 +20,6 @@ function Auth() {
         </div>
       </div>
     </div>
-
   )
 }
 

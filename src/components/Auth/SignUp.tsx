@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { Form } from "react-bootstrap";
 import { useAuth } from "../../hooks/useAuth";
 
-function SignUp(props: HTMLFormElement) {
+function SignUp(props: any) {
   const { email, setEmail, password, setPassword, signUp } = useAuth();
 
   return (
@@ -39,7 +39,7 @@ function SignUp(props: HTMLFormElement) {
         </div>
         <p className="form-subtitle">
           Already have a user?
-          <a onClick={() => props.OnFormSwitch("login")} className="a-formlink">
+            <a onClick={() => props.OnFormSwitch("login")} className="a-formlink">
             LogIn
           </a>
         </p>
