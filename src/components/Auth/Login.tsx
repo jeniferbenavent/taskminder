@@ -1,23 +1,9 @@
-import { FormEvent, useState } from "react";
-import { auth } from "../../firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
 import { Button } from "@mui/material";
 import { Form } from "react-bootstrap";
+import { useAuth } from "../../hooks/useAuth";
 
-function Login(props: any) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const signIn = (e: FormEvent) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+function Login(props: HTMLFormElement) {
+  const { email, setEmail, password, setPassword, signIn } = useAuth();
 
   return (
     <div className="rightPanel">

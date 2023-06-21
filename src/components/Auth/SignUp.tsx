@@ -1,23 +1,9 @@
-import { FormEvent, useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
 import { Button } from "@mui/material";
 import { Form } from "react-bootstrap";
+import { useAuth } from "../../hooks/useAuth";
 
-function SignUp(props: any) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const signIn = (e: FormEvent) => {
-    e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+function SignUp(props: HTMLFormElement) {
+  const { email, setEmail, password, setPassword, signUp } = useAuth();
 
   return (
     <div className="rightPanel">
@@ -25,10 +11,11 @@ function SignUp(props: any) {
         <h1 className="typeform-title">Sign Up</h1>
         <p className="form-subtitle">Welcome! Create a new account.</p>
       </div>
-      <form className="auth-form" onSubmit={signIn}>
+      <form className="auth-form" onSubmit={signUp}>
         <div className="form-group">
           <Form.Label>Email</Form.Label>
           <Form.Control
+            id="email"
             type="email"
             placeholder="name@example.com"
             value={email}
@@ -38,6 +25,7 @@ function SignUp(props: any) {
         <div className="form-group">
           <Form.Label>Password</Form.Label>
           <Form.Control
+            id="password"
             type="password"
             aria-describedby="passwordHelpBlock"
             value={password}
@@ -45,9 +33,16 @@ function SignUp(props: any) {
           />
         </div>
         <div className="form-group">
-          <Button type="submit" variant="contained">SignUp</Button>
+          <Button type="submit" variant="contained">
+            SignUp
+          </Button>
         </div>
-        <p className="form-subtitle">Already have a user?<a onClick={() => props.OnFormSwitch('login')} className="a-formlink"> LogIn</a></p>
+        <p className="form-subtitle">
+          Already have a user?
+          <a onClick={() => props.OnFormSwitch("login")} className="a-formlink">
+            LogIn
+          </a>
+        </p>
       </form>
     </div>
   );
