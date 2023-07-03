@@ -1,22 +1,12 @@
-import EditMenu from "../components/EditMenu/EditMenu"
 import SideMenu from "../components/SideMenu/SideMenu"
-import TodoList from "../components/TodoList/TodoList"
+import ToDoList from "../components/ToDoList/TodoList"
 
 const Dashboard = () => {
 
   return (
-    <div className="container-fluid dashboard">
-      <div className="row">
-        <div className="col">
-          <SideMenu />
-        </div>
-        <div className="col">
-          <TodoList />
-        </div>
-        <div className="col">
-          <EditMenu />
-        </div>
-      </div>
+    <div className="container-fluid">
+      <SideMenu />
+      <ToDoList />
     </div>
   )
 }

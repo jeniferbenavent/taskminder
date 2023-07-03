@@ -1,4 +1,5 @@
-const TodoList = () => {
+import './ToDoList.css'
+const ToDoList = () => {
 
   return (
     <>
@@ -7,4 +8,4 @@ const TodoList = () => {
 
 }
 
-export default TodoList
+export default ToDoList

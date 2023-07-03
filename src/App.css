@@ -67,4 +67,10 @@ label,.form-subtitle {
   color:rgba(193,162,226,1)!important
 }
 
+.form-error{
+
+  color: red;
+
+}
+
 /* Dashboard */

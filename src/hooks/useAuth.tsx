@@ -11,6 +11,7 @@ export const useAuth = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
+        window.location.href = '/';
       })
       .catch((error) => {
         console.log(error);
@@ -22,10 +23,29 @@ export const useAuth = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
+        window.location.href = 'dashboard';
       })
       .catch((error) => {
         console.log(error);
       });
+  };
+
+  const validateForm = () => {
+    const errors: { [key: string]: string } = {};
+
+    if (!email) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Email is invalid";
+    }
+
+    if (!password) {
+      errors.password = "Password is required";
+    } else if (password.length < 6) {
+      errors.password = "Password should be at least 6 characters";
+    }
+
+    return errors;
   };
 
   return {
@@ -34,6 +54,7 @@ export const useAuth = () => {
     password,
     setPassword,
     signUp,
-    signIn
+    signIn,
+    validateForm
   };
 };
