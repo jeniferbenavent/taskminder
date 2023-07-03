@@ -31,7 +31,7 @@ export const useAuth = () => {
   };
 
   const validateForm = () => {
-    const errors: { [key: string]: string } = {};
+    const errors: { email: string; password: string } = { email: '', password: '' };
 
     if (!email) {
       errors.email = "Email is required";

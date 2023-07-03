@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Button } from "@mui/material";
 import { Form } from "react-bootstrap";
 import { useAuth } from "../../hooks/useAuth";
-import { useState } from "react";
+
 function SignUp(props: any) {
   const { email, setEmail, password, setPassword, signUp, validateForm } = useAuth();
   const [errors, setErrors] = useState<{ email: string; password: string }>({ email: '', password: '' });
