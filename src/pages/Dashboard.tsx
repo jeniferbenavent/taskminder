@@ -1,14 +1,12 @@
-/*import SideMenu from "../components/SideMenu/SideMenu"
-import ToDoList from "../components/ToDoList/ToDoList"
+import SideMenu from "../components/SideMenu/SideMenu"
 
 const Dashboard = () => {
 
   return (
     <div className="container-fluid">
       <SideMenu />
-      <ToDoList />
     </div>
   )
 }
 
-export default Dashboard*/
+export default Dashboard
