@@ -1,4 +1,4 @@
-import SideMenu from "../components/SideMenu/SideMenu"
+/*import SideMenu from "../components/SideMenu/SideMenu"
 import ToDoList from "../components/ToDoList/ToDoList"
 
 const Dashboard = () => {
@@ -11,4 +11,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Dashboard*/
