@@ -1,5 +1,5 @@
 import SideMenu from "../components/SideMenu/SideMenu"
-import ToDoList from "../components/ToDoList/TodoList"
+import ToDoList from "../components/ToDoList/ToDoList"
 
 const Dashboard = () => {
 
