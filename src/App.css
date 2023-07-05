@@ -68,9 +68,15 @@ label,.form-subtitle {
 }
 
 .form-error{
-
   color: red;
-
 }
 
 /* Dashboard */
+.dashboard{
+  background-color: #FAFAFA;
+}
+
+.content {
+  flex-grow: 1;
+  /* Agrega cualquier otro estilo que desees para el contenido */
+}

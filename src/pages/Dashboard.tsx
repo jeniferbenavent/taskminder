@@ -1,10 +1,12 @@
 import SideMenu from "../components/SideMenu/SideMenu"
+import ToDoList from "../components/ToDoList/ToDoList"
 
 const Dashboard = () => {
 
   return (
-    <div className="container-fluid">
+    <div className="dashboard p-4 d-flex">
       <SideMenu />
+      <ToDoList />
     </div>
   )
 }

@@ -9,7 +9,6 @@ function LogIn(props: any) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     const validationErrors = validateForm();
     if (validationErrors.email == "" && validationErrors.password == "") {
       signIn(e);
