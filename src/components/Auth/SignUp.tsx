@@ -10,7 +10,7 @@ function SignUp(props: any) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const validationErrors = validateForm();
-    if (Object.keys(validationErrors).length === 0) {
+    if (validationErrors.email == "" && validationErrors.password == "") {
       signUp(e);
     } else {
       setErrors((prevState) => ({ ...prevState, ...validationErrors }));
