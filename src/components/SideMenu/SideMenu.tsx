@@ -7,7 +7,7 @@ const SideMenu = () => {
     <aside className="sideMenu">
       <div className='sideMenu-title'>
         <h4>Menu</h4>
-        <img src="/src/assets/icons/menu.png" width={17} height={17}></img>
+        <img src="/assets/icons/menu.png" width={17} height={17}></img>
       </div>
       <div className='sideMenu-searchbar'>
         <Form.Control

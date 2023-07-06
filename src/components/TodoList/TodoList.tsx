@@ -85,7 +85,7 @@ function ToDoList() {
                 <button
                   onClick={() => checkButton()}
                 >
-                  <img src='/src/assets/icons/cheque.png' width='15px' height='15px' />
+                  <img src='/assets/icons/cheque.png' width='15px' height='15px' />
                 </button>
               </div>
             ) : (
@@ -97,10 +97,10 @@ function ToDoList() {
           
           <div className='card-todolist-tasks-editdelete'>
             <button onClick={() => editButton(index)}>
-              <img src='/src/assets/icons/pencil.png' width='15px' height='15px' />
+              <img src='/assets/icons/pencil.png' width='15px' height='15px' />
             </button>
             <button onClick={() => deleteButton(index)}>
-              <img src='/src/assets/icons/cross-small.png' width='18px' height='18px' />
+              <img src='/assets/icons/cross-small.png' width='18px' height='18px' />
             </button>
           </div>
           <hr></hr>
