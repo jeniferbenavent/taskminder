@@ -1,0 +1,37 @@
+.todolist{
+  padding-left: 30px;
+  width: 100vw;
+}
+
+.todolist-time{
+  font-family:"GalanoGrotesqueBold";
+}
+
+.todolist-ntasks{
+  margin-left: 50px;
+  align-self: center;
+  font-size: 2em;
+}
+
+.todolist-titlesection{
+  margin-bottom: 50px;
+}
+
+.todolist-tasks{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.tasks{
+  display: flex;
+}
+
+.tasks-checkbox{
+  margin-right: 10px;
+}
+
+.card-todolist-tasks-editdelete{
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+}
