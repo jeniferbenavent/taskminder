@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Task } from '../../interfaces/todolist-interfaces';
 import AddTaskForm from '../AddTask/AddTaskForm';
-import './ToDoList.css'
+import './ToDo.css'
 
 function ToDoList() {
   const [tasks, setTasks] = useState<Task[]>([]);
