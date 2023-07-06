@@ -1,12 +1,12 @@
 import SideMenu from "../components/SideMenu/SideMenu"
-import ToDoList from "../components/ToDoList/ToDoList"
+import ToDo from "../components/ToDo/ToDo"
 
 const Dashboard = () => {
 
   return (
     <div className="dashboard p-4 d-flex">
       <SideMenu />
-      <ToDoList />
+      <ToDo />
     </div>
   )
 }
