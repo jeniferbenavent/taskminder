@@ -4,7 +4,7 @@ import { Task } from '../../interfaces/todolist-interfaces';
 import AddTaskForm from '../AddTask/AddTaskForm';
 import './ToDo.css'
 
-function ToDoList() {
+function ToDo() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [editIndex, setEditIndex] = useState<number | null>(null);
 
@@ -110,4 +110,4 @@ function ToDoList() {
   );
 }
 
-export default ToDoList
+export default ToDo
